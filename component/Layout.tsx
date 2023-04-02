@@ -16,6 +16,10 @@ const LayoutComponent = styled.div`
   margin: 0 20%;
   border-right: 1px solid black;
   border-left: 1px solid black;
+  @media (max-width: 480px) {
+    width: calc(100% - 10%);
+    margin: 0 5%;
+  }
 `;
 
 const Wrapper = styled.div`
