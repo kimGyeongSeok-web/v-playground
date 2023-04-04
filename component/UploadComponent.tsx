@@ -44,7 +44,7 @@ export default function UploadComponent() {
             <InPutLabel htmlFor="url">파일 업로드하기</InPutLabel>
             <InputUrl type="url" {...register("url")} />
           </InPutDiv>
-          <div> {errors.url && <div>{errors.url.message}</div>}</div>
+
           <InPutDiv>
             <InPutLabel htmlFor="text">제목 입력</InPutLabel>
             <InputText type="text" {...register("제목")} />
