@@ -6,6 +6,7 @@ interface propsType {
 }
 
 export default function Seo({ title }: propsType) {
+  console.log(title);
   return <Section>{title}</Section>;
 }
 
@@ -18,6 +19,7 @@ const Section = styled.div`
   padding: 25px 0 0;
   font-size: 4rem;
   border-bottom: 1px solid black;
+  white-space: pre-line;
   @media (max-width: 1280px) {
     font-size: 3.5rem;
   }
