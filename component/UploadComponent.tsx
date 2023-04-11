@@ -103,10 +103,16 @@ const WrapperLayout = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  padding: 50px 50px;
+  padding: 50px;
   overflow-y: scroll;
   ::-webkit-scrollbar {
     display: none;
+  }
+  @media (max-width: 1280px) {
+    padding: 25px;
+  }
+  @media (max-width: 900px) {
+    padding: 15px;
   }
 `;
 
@@ -132,6 +138,15 @@ const Button = styled.button`
   font-size: 22px;
   color: white;
   cursor: pointer;
+  @media (max-width: 1280px) {
+    width: 20%;
+    font-size: 18px;
+  }
+  @media (max-width: 900px) {
+    width: 30%;
+    font-size: 12px;
+    height: 45px;
+  }
 `;
 
 const InPutDiv = styled.div`
@@ -147,32 +162,74 @@ const InPutLabel = styled.label`
   align-items: center;
   justify-content: center;
   border-radius: 12px;
-  width: 25%;
+  width: calc(30% - 30px);
   height: 50px;
   color: white;
   background-color: #4472c4;
   margin: 0 30px 0 0;
   padding: 26px 0;
+  @media (max-width: 1280px) {
+    width: calc(30% - 20px);
+    font-size: 20px;
+    margin: 0 20px 0 0;
+  }
+  @media (max-width: 900px) {
+    width: calc(40% - 15px);
+    font-size: 14px;
+    margin: 0 15px 0 0;
+  }
 `;
 
 const InputUrl = styled.input`
   position: relative;
-  width: 75%;
+  width: 70%;
   border: none;
   font-size: 32px;
   font-weight: 500;
   padding: 5px 5px;
+  ::placeholder {
+    font-size: 26px;
+  }
+  @media (max-width: 1280px) {
+    font-size: 26px;
+    ::placeholder {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 60%;
+    font-size: 20px;
+    ::placeholder {
+      font-size: 12px;
+    }
+  }
 `;
 
 const InputText = styled.input<CssProps>`
   position: relative;
-  width: 75%;
+  width: 70%;
   height: ${(props) => (props.height ? props.height : "auto")};
   font-size: 32px;
   border-radius: 12px;
   background-color: #d6dce5;
   border: none;
   padding: 5px 10px;
+  ::placeholder {
+    font-size: 26px;
+  }
+  @media (max-width: 1280px) {
+    font-size: 26px;
+    ::placeholder {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 900px) {
+    width: 60%;
+    font-size: 20px;
+    ::placeholder {
+      font-size: 14px;
+    }
+  }
 `;
 
 const Message = styled.div`

@@ -7,7 +7,6 @@ export default function ContentSection() {
       <Wrapper>
         <Box>
           <VideoItem src="https://www.youtube.com/embed/1t9nKrsdkdw" />
-
           <Info>
             <div>Created: 2023.04.01</div>
             <div>#iu #virtual human</div>
@@ -38,7 +37,6 @@ export default function ContentSection() {
           </Info>
         </Box>
         <Box>
-          {/* <VideoItem src="https://www.youtube.com/embed/clvneMg9SR0" /> */}
           <VideoItem
             width="560"
             height="315"
@@ -46,7 +44,6 @@ export default function ContentSection() {
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           />
-
           <Info>
             <div>Created: 2023.04.02</div>
             <div>#iu #virtual human</div>
@@ -103,10 +100,6 @@ const Wrapper = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  /* overflow-y: scroll;
-  ::-webkit-scrollbar {
-    display: none;
-  } */
   @media (max-width: 1280px) {
     height: 80%;
   }
@@ -123,7 +116,6 @@ const Box = styled.div`
       top: 14%;
       content: "";
       width: 2px;
-
       height: 70%;
       border: 1px solid #d0cece;
     }
@@ -186,7 +178,6 @@ const ImageBox = styled.div`
   height: 100%;
   border-radius: 28px;
   background-color: #d6dce5;
-  /* padding: 25px 10px 15px; */
 `;
 
 const ImageLayout = styled.div`
